@@ -1,0 +1,126 @@
+%mreza
+
+50 50 translate
+/mreza {0.5 0.3 0 0 setcmykcolor 
+gsave
+2 setlinewidth 500 0 moveto 0 0 lineto 0 500 lineto stroke
+grestore
+gsave
+0.3 setlinewidth
+5 { 30 100 moveto 500 100 lineto stroke 0 100 translate } repeat
+grestore
+gsave
+0.3 setlinewidth
+5 { 100 20 moveto 100 500 lineto stroke 100 0 translate } repeat
+grestore
+gsave
+/tekst 3 string def /Helvetica findfont 10 scalefont setfont
+100 100 500 { /y exch def 5 y 2 sub moveto y tekst cvs show } for
+90 100 500 { /x exch def x 5 moveto x 10 add tekst cvs show } for
+grestore 
+0 setgray } bind def
+mreza
+
+
+%trokut-planina
+0.5 setgray
+100 100 moveto
+200 0 rlineto
+-100 200 rlineto
+closepath
+fill
+
+%obrub-planina
+0 setgray
+1 setlinejoin
+4 setlinewidth
+100 100 moveto
+200 0 rlineto
+-100 200 rlineto
+closepath
+stroke
+
+%vrh planine
+0.9 setgray
+
+200 300 moveto %vrh
+225 250 lineto
+215 230 lineto
+200 250 lineto
+closepath
+stroke
+
+200 300 moveto %vrh
+225 250 lineto
+215 230 lineto
+200 250 lineto
+closepath
+fill
+
+200 300 moveto %vrh
+175 250 lineto
+185 235 lineto
+200 250 lineto
+closepath
+stroke
+
+200 300 moveto %vrh
+175 250 lineto
+185 235 lineto
+200 250 lineto
+closepath
+fill
+
+
+%bijeli borici
+
+%1.mali boric - lijevo
+0 setlinejoin
+4 setlinewidth
+1 setgray
+150 103 moveto
+0 50 rlineto
+
+135 125 moveto
+150 140 lineto
+165 125 lineto
+
+135 140 moveto
+150 155 lineto
+165 140 lineto
+stroke
+
+%boric u sredini
+200 103 moveto
+0 100 rlineto
+stroke
+1 setlinecap
+
+185 175 moveto
+200 190 lineto
+215 175 lineto
+
+185 190 moveto
+200 205 lineto
+215 190 lineto
+
+185 160 moveto
+200 175 lineto
+215 160 lineto
+stroke
+
+%3. mali boric - desno
+0 setlinecap
+250 103 moveto
+0 50 rlineto
+
+235 125 moveto
+250 140 lineto
+265 125 lineto
+
+235 140 moveto
+250 155 lineto
+265 140 lineto
+stroke
+
+showpage
